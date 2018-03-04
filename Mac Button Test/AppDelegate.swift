@@ -10,18 +10,22 @@ import Cocoa
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
-
-    @IBOutlet weak var window: NSWindow!
-
+    
+    let buttonsWC = ButtonsWindowController()
+    
+    override init() {
+        NSWindow.allowsAutomaticWindowTabbing = false
+        super.init()
+    }
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // Insert code here to initialize your application
+        buttonsWC.loadWindow()
+        buttonsWC.showWindow(self)
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
         // Insert code here to tear down your application
     }
-
 
 }
 
