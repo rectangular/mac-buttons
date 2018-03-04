@@ -10,6 +10,11 @@
 		3CC82AD0203295C000FDDB29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC82ACF203295C000FDDB29 /* AppDelegate.swift */; };
 		3CC82AD2203295C000FDDB29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CC82AD1203295C000FDDB29 /* Assets.xcassets */; };
 		3CC82AD5203295C000FDDB29 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CC82AD3203295C000FDDB29 /* MainMenu.xib */; };
+		3CC82ADE2032964200FDDB29 /* ButtonsWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC82ADD2032964200FDDB29 /* ButtonsWindowController.swift */; };
+		3CC82AE12032969B00FDDB29 /* ButtonsWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC82AE02032969B00FDDB29 /* ButtonsWindow.swift */; };
+		3CC82AE32032A09D00FDDB29 /* ButtonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC82AE22032A09D00FDDB29 /* ButtonsViewController.swift */; };
+		3CC82AE52032A0E200FDDB29 /* ButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC82AE42032A0E200FDDB29 /* ButtonsView.swift */; };
+		3CC82AE82032AA4E00FDDB29 /* NSButton.BezelStyle+allValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC82AE72032AA4E00FDDB29 /* NSButton.BezelStyle+allValues.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,12 @@
 		3CC82AD4203295C000FDDB29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		3CC82AD6203295C000FDDB29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3CC82AD7203295C000FDDB29 /* Mac_Button_Test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Mac_Button_Test.entitlements; sourceTree = "<group>"; };
+		3CC82ADD2032964200FDDB29 /* ButtonsWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsWindowController.swift; sourceTree = "<group>"; };
+		3CC82AE02032969B00FDDB29 /* ButtonsWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsWindow.swift; sourceTree = "<group>"; };
+		3CC82AE22032A09D00FDDB29 /* ButtonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsViewController.swift; sourceTree = "<group>"; };
+		3CC82AE42032A0E200FDDB29 /* ButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsView.swift; sourceTree = "<group>"; };
+		3CC82AE72032AA4E00FDDB29 /* NSButton.BezelStyle+allValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSButton.BezelStyle+allValues.swift"; sourceTree = "<group>"; };
+		3CC8C291203F9B9D0040FB70 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,12 +63,42 @@
 			isa = PBXGroup;
 			children = (
 				3CC82ACF203295C000FDDB29 /* AppDelegate.swift */,
+				3CC8C291203F9B9D0040FB70 /* README.md */,
+				3CC82AE92032AA5300FDDB29 /* Extensions */,
+				3CC82ADF2032964700FDDB29 /* UI */,
 				3CC82AD1203295C000FDDB29 /* Assets.xcassets */,
 				3CC82AD3203295C000FDDB29 /* MainMenu.xib */,
 				3CC82AD6203295C000FDDB29 /* Info.plist */,
 				3CC82AD7203295C000FDDB29 /* Mac_Button_Test.entitlements */,
 			);
 			path = "Mac Button Test";
+			sourceTree = "<group>";
+		};
+		3CC82ADF2032964700FDDB29 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3CC82AE62032A56600FDDB29 /* ButtonsWindow */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		3CC82AE62032A56600FDDB29 /* ButtonsWindow */ = {
+			isa = PBXGroup;
+			children = (
+				3CC82ADD2032964200FDDB29 /* ButtonsWindowController.swift */,
+				3CC82AE02032969B00FDDB29 /* ButtonsWindow.swift */,
+				3CC82AE22032A09D00FDDB29 /* ButtonsViewController.swift */,
+				3CC82AE42032A0E200FDDB29 /* ButtonsView.swift */,
+			);
+			path = ButtonsWindow;
+			sourceTree = "<group>";
+		};
+		3CC82AE92032AA5300FDDB29 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3CC82AE72032AA4E00FDDB29 /* NSButton.BezelStyle+allValues.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,7 +172,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CC82AE32032A09D00FDDB29 /* ButtonsViewController.swift in Sources */,
 				3CC82AD0203295C000FDDB29 /* AppDelegate.swift in Sources */,
+				3CC82AE52032A0E200FDDB29 /* ButtonsView.swift in Sources */,
+				3CC82AE12032969B00FDDB29 /* ButtonsWindow.swift in Sources */,
+				3CC82AE82032AA4E00FDDB29 /* NSButton.BezelStyle+allValues.swift in Sources */,
+				3CC82ADE2032964200FDDB29 /* ButtonsWindowController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
