@@ -46,6 +46,7 @@
 		3CC82AC3203295C000FDDB29 = {
 			isa = PBXGroup;
 			children = (
+				3CC8C291203F9B9D0040FB70 /* README.md */,
 				3CC82ACE203295C000FDDB29 /* Mac Button Test */,
 				3CC82ACD203295C000FDDB29 /* Products */,
 			);
@@ -63,7 +64,6 @@
 			isa = PBXGroup;
 			children = (
 				3CC82ACF203295C000FDDB29 /* AppDelegate.swift */,
-				3CC8C291203F9B9D0040FB70 /* README.md */,
 				3CC82AE92032AA5300FDDB29 /* Extensions */,
 				3CC82ADF2032964700FDDB29 /* UI */,
 				3CC82AD1203295C000FDDB29 /* Assets.xcassets */,

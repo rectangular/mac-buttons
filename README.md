@@ -2,7 +2,7 @@
 
 Mac Buttons is a basic macOS app that demonstrates all of the available NSButton styles.
 
-![Mac Buttons Screenshot](https://www.dropbox.com/s/pgn2j1gubsrgpyh/Screenshot%202018-03-04%2022.48.08.png?dl=0)
+![Mac Buttons Screenshot](http://bit.ly/2teiLYt)
 
 ## License
 
